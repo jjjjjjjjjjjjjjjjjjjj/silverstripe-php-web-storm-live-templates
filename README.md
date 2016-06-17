@@ -22,7 +22,7 @@ wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-t
 
 ### Linux
 ````
-~/.PhpStorm2016.1/templates/
+cd ~/.PhpStorm2016.1/templates/
 wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP.xml
 ````
 
@@ -42,7 +42,7 @@ private static $allowed_actions = [
  * @var array
  */
 private static $belongs_many_many = [
-    '$ITERABLE$'  => '$END$'
+    '$VAR$'  => '$END$'
 ];
 ````
 ### db (database)
@@ -51,7 +51,7 @@ private static $belongs_many_many = [
  * @var array
  */
 private static $db = [
-    '$ITERABLE$' => '$END$'
+    '$VAR$' => '$END$'
 ];
 ````
 ### fs (filestart)
