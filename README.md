@@ -116,7 +116,7 @@ class $CLASS$_Controller extends Page_Controller
 }
 ````
 ## Static variables
-wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Static%20Variables.xml
+https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Static%20Variables.xml
 ### aa (allowed actions)
 ````PHP
 /**
