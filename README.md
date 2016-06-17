@@ -14,7 +14,7 @@ cd ~/Library/Preferences/PhpStorm2016.1/templates/
 wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Fields.xml
 wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Functions.xml
 wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Skeletons.xml
-wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Static%20Fields.xml
+wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Static%20Variables.xml
 ````
 
 ### Windows
@@ -23,7 +23,7 @@ cd c:\Users\USER_NAME\.PhpStorm2016.1\templates\
 wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Fields.xml
 wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Functions.xml
 wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Skeletons.xml
-wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Static%20Fields.xml
+wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Static%20Variables.xml
 ````
 
 ### Linux
@@ -32,11 +32,91 @@ cd ~/.PhpStorm2016.1/templates/
 wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Fields.xml
 wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Functions.xml
 wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Skeletons.xml
-wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Static%20Fields.xml
+wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Static%20Variables.xml
 ````
 
-# List of available templates
+# List of available templates and their contents
+## Fields
+https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Fields.xml
+### gf (grid field)
+````PHP
+$config = GridFieldConfig_$TYPE$::create();
+$$$FIELDNAME$ = GridField::create(
+    '$RELATIONNAME$',
+    _t('$CLASSNAME$.PLURALNAME', '$RELATIONNAME$'),
+    $this->$DATALIST$(),
+    $config
+);
+````
+## Functions
+https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Functions.xml
+### gcms (get cms fields)
+````PHP
+/**
+ * @return FieldList
+ */
+public function getCMSFields() {
+
+    $fields = parent::getCMSFields();
+    
+    $END$
+
+    return $fields;
+
+}
+````
+### log
+````PHP
+SS_Log::log( print_r ( $END$, true ), SS_Log::WARN );
+````
+### t (translate)
+````PHP
+_t('$STRING$', '$END$')
+````
+### ucms (update cms fields)
+````PHP
+/**
+ * @param FieldList $fields
+ */
+public function updateCMSFields(FieldList $fields) 
+{
+    $END$
+}
+````
+## Skeletons
+https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Skeletons.xml
+### dofs (data object file start)
+````PHP
+/**
+ * $DESCRIPTION$
+ * @author $AUTHOR$
+ * @package $PACKAGE$
+ * @subpackage $SUBPACKAGE$
+ */
+class $CLASS$ extends DataObject
+{
+    $END$
+}
+````
+### pfs (page file start)
+````PHP
+/**
+ * $DESCRIPTION$
+ * @author $AUTHOR$
+ * @package $PACKAGE$
+ * @subpackage $SUBPACKAGE$
+ */
+class $CLASS$ extends Page
+{
+    $END$
+}
+
+class $CLASS$_Controller extends Page_Controller 
+{
+}
+````
 ## Static variables
+wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Static%20Variables.xml
 ### aa (allowed actions)
 ````PHP
 /**
@@ -120,80 +200,4 @@ private static $searchable_fields = [
 private static $summary_fields = [
     $END$
 ];
-````
-## Fields
-### gf (grid field)
-````PHP
-$config = GridFieldConfig_$TYPE$::create();
-$$$FIELDNAME$ = GridField::create(
-    '$RELATIONNAME$',
-    _t('$CLASSNAME$.PLURALNAME', '$RELATIONNAME$'),
-    $this->$DATALIST$(),
-    $config
-);
-````
-## Functions
-### gcms (get cms fields)
-````PHP
-/**
- * @return FieldList
- */
-public function getCMSFields() {
-
-    $fields = parent::getCMSFields();
-    
-    $END$
-
-    return $fields;
-
-}
-````
-### log
-````PHP
-SS_Log::log( print_r ( $END$, true ), SS_Log::WARN );
-````
-### t (translate)
-````PHP
-_t('$STRING$', '$END$')
-````
-### ucms (update cms fields)
-````PHP
-/**
- * @param FieldList $fields
- */
-public function updateCMSFields(FieldList $fields) 
-{
-    $END$
-}
-````
-## Skeletons
-### dofs (data object file start)
-````PHP
-/**
- * $DESCRIPTION$
- * @author $AUTHOR$
- * @package $PACKAGE$
- * @subpackage $SUBPACKAGE$
- */
-class $CLASS$ extends DataObject
-{
-    $END$
-}
-````
-### pfs (page file start)
-````PHP
-/**
- * $DESCRIPTION$
- * @author $AUTHOR$
- * @package $PACKAGE$
- * @subpackage $SUBPACKAGE$
- */
-class $CLASS$ extends Page
-{
-    $END$
-}
-
-class $CLASS$_Controller extends Page_Controller 
-{
-}
 ````
