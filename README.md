@@ -9,37 +9,54 @@ See [this IntelliJ article](https://intellij-support.jetbrains.com/hc/en-us/arti
 
 If you're lazy and you have PhpStorm2016.1 and wget installed, you can copy and paste the following:
 ### Mac OSX
-````
+```
 cd ~/Library/Preferences/PhpStorm2016.1/templates/
 wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Fields.xml
 wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Functions.xml
 wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Skeletons.xml
 wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Static%20Variables.xml
-````
+```
 
 ### Windows
-````
+```
 cd c:\Users\USER_NAME\.PhpStorm2016.1\templates\
 wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Fields.xml
 wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Functions.xml
 wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Skeletons.xml
 wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Static%20Variables.xml
-````
+```
 
 ### Linux
-````
+```
 cd ~/.PhpStorm2016.1/templates/
 wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Fields.xml
 wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Functions.xml
 wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Skeletons.xml
 wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Static%20Variables.xml
-````
+```
 
 # List of available templates and their contents
 ## Fields
 https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Fields.xml
+### cbf (check box field)
+```PHP
+CheckboxField::create($NAME$, $LABEL$)$END$
+```
+### df (date field)
+```PHP
+DateField::create($NAME$, $LABEL$)$END$
+```
+### fg (field group)
+```PHP
+$enabledFieldGroup = FieldGroup::create(
+    _t('Settings.ENABLED', 'Enabled'),
+    [
+        $enabledField,
+    ]
+);
+```
 ### gf (grid field)
-````PHP
+```PHP
 $config = GridFieldConfig_$TYPE$::create();
 $$$FIELDNAME$ = GridField::create(
     '$RELATIONNAME$',
@@ -47,11 +64,23 @@ $$$FIELDNAME$ = GridField::create(
     $this->$DATALIST$(),
     $config
 );
-````
+```
+### lf (literal field)
+```PHP
+LiteralField::create($NAME$, $LABEL$)$END$
+```
+### nf (numeric field)
+```PHP
+NumericField::create($NAME$, $LABEL$)$END$
+```
+### tf (text field)
+```PHP
+TextField::create($NAME$, $LABEL$)$END$
+```
 ## Functions
 https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Functions.xml
 ### gcms (get cms fields)
-````PHP
+```PHP
 /**
  * @return FieldList
  */
@@ -64,17 +93,17 @@ public function getCMSFields() {
     return $fields;
 
 }
-````
+```
 ### log
-````PHP
+```PHP
 SS_Log::log( print_r ( $END$, true ), SS_Log::WARN );
-````
+```
 ### t (translate)
-````PHP
+```PHP
 _t('$STRING$', '$END$')
-````
+```
 ### ucms (update cms fields)
-````PHP
+```PHP
 /**
  * @param FieldList $fields
  */
@@ -82,11 +111,11 @@ public function updateCMSFields(FieldList $fields)
 {
     $END$
 }
-````
+```
 ## Skeletons
 https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Skeletons.xml
 ### dofs (data object file start)
-````PHP
+```PHP
 /**
  * $DESCRIPTION$
  * @author $AUTHOR$
@@ -97,9 +126,35 @@ class $CLASS$ extends DataObject
 {
     $END$
 }
-````
+```
+### defs (data extension file start)
+```PHP
+/**
+ * $DESCRIPTION$
+ * @author $AUTHOR$
+ * @package $PACKAGE$
+ * @subpackage $SUBPACKAGE$
+ */
+class $CLASS$Extension extends DataExtension
+{
+    $END$
+}
+```
+### efs (extension file start)
+```PHP
+/**
+ * $DESCRIPTION$
+ * @author $AUTHOR$
+ * @package $PACKAGE$
+ * @subpackage $SUBPACKAGE$
+ */
+class $CLASS$ extends Extension
+{
+    $END$
+}
+```
 ### pfs (page file start)
-````PHP
+```PHP
 /**
  * $DESCRIPTION$
  * @author $AUTHOR$
@@ -114,65 +169,65 @@ class $CLASS$ extends Page
 class $CLASS$_Controller extends Page_Controller 
 {
 }
-````
+```
 ## Static variables
 https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Static%20Variables.xml
 ### aa (allowed actions)
-````PHP
+```PHP
 /**
  * @var array
  */
 private static $allowed_actions = [
     '$END$'
 ];
-````
+```
 ### bmm (belongs many-many)
-````PHP
+```PHP
 /**
  * @var array
  */
 private static $belongs_many_many = [
     '$VAR$'  => '$END$'
 ];
-````
+```
 ### db (database)
-````PHP
+```PHP
 /**
  * @var array
  */
 private static $db = [
     '$VAR$' => '$END$'
 ];
-````
+```
 ### hm (has many)
-````PHP
+```PHP
 /**
  * @var array
  */
 private static $has_many = [
     '$VAR$'  => '$END$'
 ];
-````
+```
 ### ho (has one)
-````PHP
+```PHP
 /**
  * @var array
  */
 private static $has_one = [
     '$VAR$'  => '$END$'
 ];
-````
+```
 ### mm (many many)
-````PHP
+```PHP
 /**
  * @var array
  */
 private static $many_many = [
     '$VAR$'  => '$END$'
 ];
-````
+```
 ### mmef (many many extra fields)
-````PHP
+```PHP
 /**
  * @var array
  */
@@ -182,22 +237,22 @@ private static $many_many_extraFields = [
     ]
 ];
 
-````
+```
 ### sef (searchable fields)
-````PHP
+```PHP
 /**
  * @var array
  */
 private static $searchable_fields = [
     $END$
 ];
-````
+```
 ### suf (summary fields)
-````PHP
+```PHP
 /**
  * @var array
  */
 private static $summary_fields = [
     $END$
 ];
-````
+```
