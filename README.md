@@ -11,22 +11,32 @@ If you're lazy and you have PhpStorm2016.1 and wget installed, you can copy and 
 ### Mac OSX
 ````
 cd ~/Library/Preferences/PhpStorm2016.1/templates/
-wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP.xml
+wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Fields.xml
+wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Functions.xml
+wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Skeletons.xml
+wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Static%20Fields.xml
 ````
 
 ### Windows
 ````
 cd c:\Users\USER_NAME\.PhpStorm2016.1\templates\
-wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP.xml
+wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Fields.xml
+wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Functions.xml
+wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Skeletons.xml
+wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Static%20Fields.xml
 ````
 
 ### Linux
 ````
 cd ~/.PhpStorm2016.1/templates/
-wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP.xml
+wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Fields.xml
+wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Functions.xml
+wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Skeletons.xml
+wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Static%20Fields.xml
 ````
 
 # List of available templates
+## Static variables
 ### aa (allowed actions)
 ````PHP
 /**
@@ -54,44 +64,6 @@ private static $db = [
     '$VAR$' => '$END$'
 ];
 ````
-### fs (filestart)
-````PHP
-/**
- * $DESCRIPTION$
- * @author $AUTHOR$
- * @package $PACKAGE$
- * @subpackage $SUBPACKAGE$
- */
-class $CLASS$ extends $ANOTHERCLASS$
-{
-    $END$
-}
-````
-### gcms (get cms fields)
-````PHP
-/**
- * @return FieldList
- */
-public function getCMSFields() {
-
-    $fields = parent::getCMSFields();
-    
-    $END$
-
-    return $fields;
-
-}
-````
-### gf (grid field)
-````PHP
-$config = GridFieldConfig_$TYPE$::create();
-$$$FIELDNAME$ = GridField::create(
-    '$RELATIONNAME$',
-    _t('$CLASSNAME$.PLURALNAME', '$RELATIONNAME$'),
-    $this->$DATALIST$(),
-    $config
-);
-````
 ### hm (has many)
 ````PHP
 /**
@@ -109,10 +81,6 @@ private static $has_many = [
 private static $has_one = [
     '$VAR$'  => '$END$'
 ];
-````
-### log
-````PHP
-SS_Log::log( print_r ( $END$, true ), SS_Log::WARN );
 ````
 ### mm (many many)
 ````PHP
@@ -153,6 +121,37 @@ private static $summary_fields = [
     $END$
 ];
 ````
+## Fields
+### gf (grid field)
+````PHP
+$config = GridFieldConfig_$TYPE$::create();
+$$$FIELDNAME$ = GridField::create(
+    '$RELATIONNAME$',
+    _t('$CLASSNAME$.PLURALNAME', '$RELATIONNAME$'),
+    $this->$DATALIST$(),
+    $config
+);
+````
+## Functions
+### gcms (get cms fields)
+````PHP
+/**
+ * @return FieldList
+ */
+public function getCMSFields() {
+
+    $fields = parent::getCMSFields();
+    
+    $END$
+
+    return $fields;
+
+}
+````
+### log
+````PHP
+SS_Log::log( print_r ( $END$, true ), SS_Log::WARN );
+````
 ### t (translate)
 ````PHP
 _t('$STRING$', '$END$')
@@ -165,5 +164,36 @@ _t('$STRING$', '$END$')
 public function updateCMSFields(FieldList $fields) 
 {
     $END$
+}
+````
+## Skeletons
+### dofs (data object file start)
+````PHP
+/**
+ * $DESCRIPTION$
+ * @author $AUTHOR$
+ * @package $PACKAGE$
+ * @subpackage $SUBPACKAGE$
+ */
+class $CLASS$ extends DataObject
+{
+    $END$
+}
+````
+### pfs (page file start)
+````PHP
+/**
+ * $DESCRIPTION$
+ * @author $AUTHOR$
+ * @package $PACKAGE$
+ * @subpackage $SUBPACKAGE$
+ */
+class $CLASS$ extends Page
+{
+    $END$
+}
+
+class $CLASS$_Controller extends Page_Controller 
+{
 }
 ````
