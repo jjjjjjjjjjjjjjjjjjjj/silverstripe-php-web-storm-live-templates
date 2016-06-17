@@ -1,5 +1,5 @@
 # SilverStripe live templates
-Some useful live templates for IntelliJ PHP/WebStorm. 
+Some useful live templates for IntelliJ PHP/WebStorm following PSR-2, using PHPDoc, and utilizing PHP 5.4 array shorthand syntax. 
 
 # Installation
 Download and place the template files inside your IDE's templates folder. Where the folder is located depends on the version and type of IDE you are using. 
@@ -7,7 +7,7 @@ Download and place the template files inside your IDE's templates folder. Where 
 See [this IntelliJ article](https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs) on where your settings are stored.
 
 
-If you're lazy and you have PhpStorm2016.1 and wget installed, you can copy and paste the following:
+If you're lazy and you have PhpStorm2016.1 and wget installed, you can copy and paste the following and then restart your IDE:
 ### Mac OSX
 ```
 cd ~/Library/Preferences/PhpStorm2016.1/templates/
@@ -33,6 +33,16 @@ wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-t
 wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Functions.xml
 wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Skeletons.xml
 wget https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Static%20Variables.xml
+```
+# Usage
+After installing, when editing a PHP file you can simply type in the short code for the live template and then hit the "Choose lookup Item Replace" keymap binding (`tab` by default). For example, typing in `aa` then hitting `tab`, would generate the following:
+```PHP
+/**
+ * @var array
+ */
+private static $allowed_actions = [
+    '$END$'
+];
 ```
 
 # List of available templates and their contents
