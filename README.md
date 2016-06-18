@@ -50,42 +50,41 @@ private static $allowed_actions = [
 https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Fields.xml
 ### cbf (check box field)
 ```PHP
-CheckboxField::create($NAME$, $LABEL$)$END$
+CheckboxField::create('$NAME$', $LABEL$)$END$
 ```
 ### df (date field)
 ```PHP
-DateField::create($NAME$, $LABEL$)$END$
+DateField::create('$NAME$', $LABEL$)$END$
 ```
 ### fg (field group)
 ```PHP
-$enabledFieldGroup = FieldGroup::create(
-    _t('Settings.ENABLED', 'Enabled'),
+$FIELDNAME$ = FieldGroup::create(
+    $LABEL$,
     [
-        $enabledField,
+        $FIELDS$
     ]
-);
+)$END$
 ```
 ### gf (grid field)
 ```PHP
-$config = GridFieldConfig_$TYPE$::create();
-$$$FIELDNAME$ = GridField::create(
-    '$RELATIONNAME$',
-    _t('$CLASSNAME$.PLURALNAME', '$RELATIONNAME$'),
+GridField::create(
+    '$NAME$',
+    $LABEL$
     $this->$DATALIST$(),
-    $config
-);
+    GridFieldConfig_$TYPE$::create()
+)$END$
 ```
 ### lf (literal field)
 ```PHP
-LiteralField::create($NAME$, $LABEL$)$END$
+LiteralField::create('$NAME$', $LABEL$)$END$
 ```
 ### nf (numeric field)
 ```PHP
-NumericField::create($NAME$, $LABEL$)$END$
+NumericField::create('$NAME$', $LABEL$)$END$
 ```
 ### tf (text field)
 ```PHP
-TextField::create($NAME$, $LABEL$)$END$
+TextField::create('$NAME$', $LABEL$)$END$
 ```
 ## Functions
 https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Functions.xml
@@ -110,7 +109,7 @@ SS_Log::log( print_r ( $END$, true ), SS_Log::WARN );
 ```
 ### t (translate)
 ```PHP
-_t('$STRING$', '$END$')
+_t('$STRING$', '$DEFAULT$')$END$
 ```
 ### ucms (update cms fields)
 ```PHP
