@@ -42,7 +42,7 @@ DateField::create('$NAME$', $LABEL$)$END$
 ```
 ### fg (field group)
 ```PHP
-$FIELDNAME$ = FieldGroup::create(
+FieldGroup::create(
     $LABEL$,
     [
         $FIELDS$
