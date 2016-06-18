@@ -19,7 +19,7 @@ For PhpStorm 2016.1:
 `~/.PhpStorm2016.1/templates/`
 
 # Usage
-After installing, when editing a PHP file you can simply type in the short code for the live template and then hit the "Choose lookup Item Replace" keymap binding (`tab` by default). For example, typing in `aa` then hitting `tab`, would generate the following:
+When editing a PHP file you can simply type in the short code for the live template and then hit the "Choose lookup Item Replace" keymap binding (`tab` by default). For example, typing in `aa` then hitting `tab`, would generate the following:
 ```PHP
 /**
  * @var array
