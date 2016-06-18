@@ -8,16 +8,6 @@ Download and place the following template files inside your IDE's `templates/` f
 * [`SilverStripe PHP Skeletons.xml`](https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Skeletons.xml)
 * [`SilverStripe PHP Static Variables.xml`](https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Static%20Variables.xml)
 
-For PhpStorm 2016.1:
-### Mac OSX
-`~/Library/Preferences/PhpStorm2016.1/templates/`
-
-### Windows
-`c:\Users\USER_NAME\.PhpStorm2016.1\config\templates\`
-
-### Linux
-`~/.PhpStorm2016.1/config/templates/`
-
 # Usage
 When editing a PHP file you can simply type in the short code for the live template and then hit the "Choose lookup Item Replace" keymap binding (`tab` by default). For example, typing in `aa` then hitting `tab`, would expand `aa` into the following and leaving your cursor in between the single quotes:
 ```PHP
