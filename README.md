@@ -2,7 +2,7 @@
 My collection of live templates for IntelliJ PHP/WebStorm following PSR-2, using PHPDoc, and utilizing PHP 5.4 array shorthand syntax. These templates do not attempt cover every static nor function, but are a collection of snippets that I frequently use in my daily work. Feel free to [open issues](https://github.com/janneklouman/silverstripe-phpstorm-live-templates/issues) to suggest additional templates.
 
 # Installation
-Download and place the template files inside your IDE's templates folder. Where the folder is located depends on the version and type of IDE you are using. Direct links to the template files: 
+Download and place the template files inside your IDE's `templates/` folder. Where the folder is located depends on the version and type of IDE you are using. Direct links to the template files: 
 * [`SilverStripe PHP Fields.xml`](https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Fields.xml)
 * [`SilverStripe PHP Functions.xml`](https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Functions.xml)
 * [`SilverStripe PHP Skeletons`](https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Skeletons.xml)
