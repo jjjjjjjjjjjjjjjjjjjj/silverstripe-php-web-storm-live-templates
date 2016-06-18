@@ -31,7 +31,7 @@ private static $allowed_actions = [
 
 # List of available templates and their contents
 ## Fields
-https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Fields.xml
+Direct link to the live template file: https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Fields.xml
 ### cbf (check box field)
 ```PHP
 CheckboxField::create('$NAME$', $LABEL$)$END$
@@ -71,7 +71,7 @@ NumericField::create('$NAME$', $LABEL$)$END$
 TextField::create('$NAME$', $LABEL$)$END$
 ```
 ## Functions
-https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Functions.xml
+Direct link to the live template file: https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Functions.xml
 ### gcms (get cms fields)
 ```PHP
 /**
@@ -106,7 +106,7 @@ public function updateCMSFields(FieldList $fields)
 }
 ```
 ## Skeletons
-https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Skeletons.xml
+Direct link to the live template file: https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Skeletons.xml
 ### dofs (data object file start)
 ```PHP
 /**
@@ -164,7 +164,7 @@ class $CLASS$_Controller extends Page_Controller
 }
 ```
 ## Static variables
-https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Static%20Variables.xml
+Direct link to the live template file: https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Static%20Variables.xml
 ### aa (allowed actions)
 ```PHP
 /**
