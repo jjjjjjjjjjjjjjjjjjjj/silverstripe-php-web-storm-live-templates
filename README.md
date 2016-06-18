@@ -28,6 +28,35 @@ private static $allowed_actions = [
 ```
 
 # List of available templates and their contents
+  - [Fields](#fields)
+    - [cbf (check box field)](#cbf-check-box-field)
+    - [df (date field)](#df-date-field)
+    - [fg (field group)](#fg-field-group)
+    - [gf (grid field)](#gf-grid-field)
+    - [lf (literal field)](#lf-literal-field)
+    - [nf (numeric field)](#nf-numeric-field)
+    - [tf (text field)](#tf-text-field)
+  - [Functions](#functions)
+    - [gcms (get cms fields)](#gcms-get-cms-fields)
+    - [log](#log)
+    - [t (translate)](#t-translate)
+    - [ucms (update cms fields)](#ucms-update-cms-fields)
+  - [Skeletons](#skeletons)
+    - [dofs (data object file start)](#dofs-data-object-file-start)
+    - [defs (data extension file start)](#defs-data-extension-file-start)
+    - [efs (extension file start)](#efs-extension-file-start)
+    - [pfs (page file start)](#pfs-page-file-start)
+  - [Static variables](#static-variables)
+    - [aa (allowed actions)](#aa-allowed-actions)
+    - [bmm (belongs many-many)](#bmm-belongs-many-many)
+    - [db (database)](#db-database)
+    - [hm (has many)](#hm-has-many)
+    - [ho (has one)](#ho-has-one)
+    - [mm (many many)](#mm-many-many)
+    - [mmef (many many extra fields)](#mmef-many-many-extra-fields)
+    - [sef (searchable fields)](#sef-searchable-fields)
+    - [suf (summary fields)](#suf-summary-fields)
+
 ## Fields
 Direct link to the live template file: https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Fields.xml
 ### cbf (check box field)
