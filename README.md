@@ -2,14 +2,13 @@
 My collection of live templates for IntelliJ PHP/WebStorm following PSR-2, using PHPDoc, and utilizing PHP 5.4 array shorthand syntax. These templates do not attempt cover every static nor function, but are a collection of snippets that I frequently use in my daily work. Feel free to [open issues](https://github.com/janneklouman/silverstripe-phpstorm-live-templates/issues) to suggest additional templates.
 
 # Installation
-Download and place the template files inside your IDE's `templates/` folder. Where the folder is located depends on the version and type of IDE you are using. Direct links to the template files: 
+Download and place the following template files inside your IDE's `templates/` folder. Where the folder is located depends on the version and type of IDE you are using. See [this IntelliJ article](https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs) on where you'll find yours. Direct links to the template files: 
 * [`SilverStripe PHP Fields.xml`](https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Fields.xml)
 * [`SilverStripe PHP Functions.xml`](https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Functions.xml)
-* [`SilverStripe PHP Skeletons`](https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Skeletons.xml)
+* [`SilverStripe PHP Skeletons.xml`](https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Skeletons.xml)
 * [`SilverStripe PHP Static Variables.xml`](https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Static%20Variables.xml)
 
-See [this IntelliJ article](https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs) on where your settings are stored.
-
+For PhpStorm 2016.1:
 ### Mac OSX
 `~/Library/Preferences/PhpStorm2016.1/templates/`
 
