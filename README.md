@@ -41,7 +41,7 @@ private static $allowed_actions = [
     - [log](#log)
     - [t (translate)](#t-translate)
     - [ucms (update cms fields)](#ucms-update-cms-fields)
-  - [Skeletons](#skeletons)
+  - ["Skeletons"](#skeletons)
     - [dofs (data object file start)](#dofs-data-object-file-start)
     - [defs (data extension file start)](#defs-data-extension-file-start)
     - [efs (extension file start)](#efs-extension-file-start)
@@ -132,7 +132,7 @@ public function updateCMSFields(FieldList $fields)
     $END$
 }
 ```
-## Skeletons
+## "Skeletons"
 Direct link to the live template file: https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Skeletons.xml
 ### dofs (data object file start)
 ```PHP
