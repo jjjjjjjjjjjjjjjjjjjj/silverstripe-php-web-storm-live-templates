@@ -1,0 +1,24 @@
+<templateSet group="SilverStripe PHP Functions">
+  <template name="gcms" value="/**&#10; * @return FieldList&#10; */&#10;public function getCMSFields() {&#10;&#10;    $fields = parent::getCMSFields();&#10;    &#10;    $END$&#10;&#10;    return $fields;&#10;&#10;}" description="geCMSFields" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ucms" value="/**&#10; * @param FieldList $fields&#10; */&#10;public function updateCMSFields(FieldList $fields) &#10;{&#10;    $END$&#10;}" description="updateCMSFields" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="t" value="_t('$STRING$', '$DEFAULT$')$END$" description="Translation function" toReformat="false" toShortenFQNames="true">
+    <variable name="STRING" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DEFAULT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="log" value="SS_Log::log( print_r ( $END$, true ), SS_Log::WARN );" description="Log something" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>

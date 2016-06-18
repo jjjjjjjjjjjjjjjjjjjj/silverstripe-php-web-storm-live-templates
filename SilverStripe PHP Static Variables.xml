@@ -1,0 +1,55 @@
+<templateSet group="SilverStripe PHP Static Variables">
+  <template name="hm" value="/**&#10; * @var array&#10; */&#10;private static $has_many = [&#10;    '$VAR$'  =&gt; '$END$'&#10;];" description="Has many relation" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="db" value="/**&#10; * @var array&#10; */&#10;private static $db = [&#10;    '$VAR$' =&gt; '$END$'&#10;];" description="DB fields" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ho" value="/**&#10; * @var array&#10; */&#10;private static $has_one = [&#10;    '$VAR$'  =&gt; '$END$'&#10;];" description="Has one relation" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="mm" value="/**&#10; * @var array&#10; */&#10;private static $many_many = [&#10;    '$VAR$'  =&gt; '$END$'&#10;];" description="Many-many relation" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="aa" value="/**&#10; * @var array&#10; */&#10;private static $allowed_actions = [&#10;    '$END$'&#10;];" description="Allowed actions" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="bmm" value="/**&#10; * @var array&#10; */&#10;private static $belongs_many_many = [&#10;    '$VAR$'  =&gt; '$END$'&#10;];" description="Belongs many many" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="sef" value="/**&#10; * @var array&#10; */&#10;private static $searchable_fields = [&#10;    $END$&#10;];" description="Searchable fields" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="suf" value="/**&#10; * @var array&#10; */&#10;private static $summary_fields = [&#10;    $END$&#10;];" description="Summary fields" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="mmef" value="/**&#10; * @var array&#10; */&#10;private static $many_many_extraFields = [&#10;    '$RELATION$' =&gt; [&#10;        '$NAME$' =&gt; '$TYPE$'&#10;    ]&#10;];&#10;" description="Many-many extra fields" toReformat="false" toShortenFQNames="true">
+    <variable name="RELATION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
