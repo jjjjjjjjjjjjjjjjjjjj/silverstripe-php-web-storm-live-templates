@@ -5,7 +5,9 @@
     <variable name="PACKAGE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="SUBPACKAGE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="CLASS" expression="" defaultValue="" alwaysStopAt="true" />
-    <context />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
   </template>
   <template name="pfs" value="/**&#10; * $DESCRIPTION$&#10; * @author $AUTHOR$&#10; * @package $PACKAGE$&#10; * @subpackage $SUBPACKAGE$&#10; */&#10;class $CLASS$ extends Page&#10;{&#10;    $END$&#10;}&#10;&#10;class $CLASS$_Controller extends Page_Controller &#10;{&#10;}" description="Page file start" toReformat="false" toShortenFQNames="true">
     <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
