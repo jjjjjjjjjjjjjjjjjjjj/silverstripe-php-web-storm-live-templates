@@ -1,5 +1,5 @@
 <templateSet group="SilverStripe PHP Skeletons">
-  <template name="dofs" value="/**&#10; * $DESCRIPTION$&#10; * @author $AUTHOR$&#10; * @package $PACKAGE$&#10; * @subpackage $SUBPACKAGE$&#10; */&#10;class $CLASS$ extends DataObject&#10;{&#10;    $END$&#10;}" description="DataObject filestart" toReformat="false" toShortenFQNames="true">
+  <template name="dofs" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @author $AUTHOR$&#10; * @package $PACKAGE$&#10; * @subpackage $SUBPACKAGE$&#10; */&#10;class $CLASS$ extends DataObject&#10;{&#10;    $END$&#10;}" description="DataObject filestart" toReformat="false" toShortenFQNames="true">
     <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="AUTHOR" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="PACKAGE" expression="" defaultValue="" alwaysStopAt="true" />
@@ -9,7 +9,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="pfs" value="/**&#10; * $DESCRIPTION$&#10; * @author $AUTHOR$&#10; * @package $PACKAGE$&#10; * @subpackage $SUBPACKAGE$&#10; */&#10;class $CLASS$ extends Page&#10;{&#10;    $END$&#10;}&#10;&#10;class $CLASS$_Controller extends Page_Controller &#10;{&#10;}" description="Page file start" toReformat="false" toShortenFQNames="true">
+  <template name="pfs" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @author $AUTHOR$&#10; * @package $PACKAGE$&#10; * @subpackage $SUBPACKAGE$&#10; */&#10;class $CLASS$ extends Page&#10;{&#10;    $END$&#10;}&#10;&#10;class $CLASS$_Controller extends Page_Controller &#10;{&#10;}" description="Page file start" toReformat="false" toShortenFQNames="true">
     <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="AUTHOR" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="PACKAGE" expression="" defaultValue="" alwaysStopAt="true" />
@@ -19,7 +19,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="defs" value="/**&#10; * $DESCRIPTION$&#10; * @author $AUTHOR$&#10; * @package $PACKAGE$&#10; * @subpackage $SUBPACKAGE$&#10; */&#10;class $CLASS$Extension extends DataExtension&#10;{&#10;    $END$&#10;}" description="DataExtension filestart" toReformat="false" toShortenFQNames="true">
+  <template name="defs" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @author $AUTHOR$&#10; * @package $PACKAGE$&#10; * @subpackage $SUBPACKAGE$&#10; */&#10;class $CLASS$Extension extends DataExtension&#10;{&#10;    $END$&#10;}" description="DataExtension filestart" toReformat="false" toShortenFQNames="true">
     <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="AUTHOR" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="PACKAGE" expression="" defaultValue="" alwaysStopAt="true" />
@@ -29,7 +29,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="efs" value="/**&#10; * $DESCRIPTION$&#10; * @author $AUTHOR$&#10; * @package $PACKAGE$&#10; * @subpackage $SUBPACKAGE$&#10; */&#10;class $CLASS$ extends Extension&#10;{&#10;    $END$&#10;}" description="Extension filestart" toReformat="false" toShortenFQNames="true">
+  <template name="efs" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @author $AUTHOR$&#10; * @package $PACKAGE$&#10; * @subpackage $SUBPACKAGE$&#10; */&#10;class $CLASS$ extends Extension&#10;{&#10;    $END$&#10;}" description="Extension filestart" toReformat="false" toShortenFQNames="true">
     <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="AUTHOR" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="PACKAGE" expression="" defaultValue="" alwaysStopAt="true" />

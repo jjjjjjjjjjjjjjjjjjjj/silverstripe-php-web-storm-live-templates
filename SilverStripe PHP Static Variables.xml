@@ -52,4 +52,14 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="d" value="/**&#10; * @var array&#10; */&#10;private static $defaults = [&#10;    $END$&#10;]; " description="Defaults" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ds" value="/**&#10; * @var string&#10; */&#10;private static $default_sort '$END$';" description="Default sort" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>

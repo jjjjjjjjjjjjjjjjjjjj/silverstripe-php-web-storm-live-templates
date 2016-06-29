@@ -1,9 +1,9 @@
 <templateSet group="SilverStripe PHP Fields">
-  <template name="gf" value="GridField::create(&#10;    '$NAME$',&#10;    $LABEL$&#10;    $this-&gt;$DATALIST$(),&#10;    GridFieldConfig_$TYPE$::create()&#10;)$END$" description="GridField" toReformat="false" toShortenFQNames="true">
+  <template name="gf" value="GridField::create(&#10;    '$NAME$',&#10;    $LABEL$,&#10;    $this-&gt;$DATALIST$(),&#10;    GridFieldConfig_$TYPE$::create()&#10;)$END$" description="GridField" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="TYPE" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <variable name="LABEL" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="DATALIST" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
@@ -46,6 +46,14 @@
   <template name="fg" value="FieldGroup::create(&#10;    $LABEL$,&#10;    [&#10;        $FIELDS$&#10;    ]&#10;)$END$" description="FieldGroup" toReformat="false" toShortenFQNames="true">
     <variable name="LABEL" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="FIELDS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ddf" value="DropdownField::create(&#10;    '$NAME$',&#10;    $LABEL$,&#10;    $DATALIST$&#10;)$END$&#10;    " description="DropdownField" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LABEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DATALIST" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>

@@ -8,7 +8,7 @@ Download and place the template files inside your IDE's `templates/` folder. Whe
 |---|---|
 |Windows|`<your home directory>\.<product name><version number>\config\templates`|
 |Linux|`~\.<product name><version number>\config\templates`|
-|OS X|`~/Library/Preferences/<product name><version number>/templates´|
+|OS X|`~/Library/Preferences/<product name><version number>/templates`|
 
 Direct links to the template files: 
 * [`SilverStripe PHP Fields.xml`](https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Fields.xml)
@@ -30,6 +30,7 @@ private static $allowed_actions = [
 # List of available templates and their contents
   - [Fields](#fields)
     - [cbf (check box field)](#cbf-check-box-field)
+    - [ddf (drop down field)](#drop-down-field)
     - [df (date field)](#df-date-field)
     - [fg (field group)](#fg-field-group)
     - [gf (grid field)](#gf-grid-field)
@@ -50,6 +51,8 @@ private static $allowed_actions = [
     - [aa (allowed actions)](#aa-allowed-actions)
     - [bmm (belongs many-many)](#bmm-belongs-many-many)
     - [db (database)](#db-database)
+    - [d (defaults)](#defaults)
+    - [ds (default sort)](#default-sort)
     - [hm (has many)](#hm-has-many)
     - [ho (has one)](#ho-has-one)
     - [mm (many many)](#mm-many-many)
@@ -62,6 +65,14 @@ Direct link to the live template file: https://raw.githubusercontent.com/jannekl
 ### cbf (check box field)
 ```PHP
 CheckboxField::create('$NAME$', $LABEL$)$END$
+```
+### ddf (drop down field)
+```PHP
+DropdownField::create(
+    '$NAME$',
+    $LABEL$,
+    $DATALIST$
+)$END$
 ```
 ### df (date field)
 ```PHP
@@ -80,7 +91,7 @@ FieldGroup::create(
 ```PHP
 GridField::create(
     '$NAME$',
-    $LABEL$
+    $LABEL$,
     $this->$DATALIST$(),
     GridFieldConfig_$TYPE$::create()
 )$END$
@@ -138,6 +149,7 @@ Direct link to the live template file: https://raw.githubusercontent.com/jannekl
 ```PHP
 /**
  * $DESCRIPTION$
+ *
  * @author $AUTHOR$
  * @package $PACKAGE$
  * @subpackage $SUBPACKAGE$
@@ -151,6 +163,7 @@ class $CLASS$ extends DataObject
 ```PHP
 /**
  * $DESCRIPTION$
+ *
  * @author $AUTHOR$
  * @package $PACKAGE$
  * @subpackage $SUBPACKAGE$
@@ -164,6 +177,7 @@ class $CLASS$Extension extends DataExtension
 ```PHP
 /**
  * $DESCRIPTION$
+ *
  * @author $AUTHOR$
  * @package $PACKAGE$
  * @subpackage $SUBPACKAGE$
@@ -177,6 +191,7 @@ class $CLASS$ extends Extension
 ```PHP
 /**
  * $DESCRIPTION$
+ *
  * @author $AUTHOR$
  * @package $PACKAGE$
  * @subpackage $SUBPACKAGE$
@@ -210,6 +225,15 @@ private static $belongs_many_many = [
     '$VAR$'  => '$END$'
 ];
 ```
+### d (defaults)
+```PHP
+/**
+ * @var array
+ */
+private static $defaults = [
+    $END$
+];
+```
 ### db (database)
 ```PHP
 /**
@@ -218,6 +242,13 @@ private static $belongs_many_many = [
 private static $db = [
     '$VAR$' => '$END$'
 ];
+```
+### df (default sort)
+```PHP
+/**
+ * @var string
+ */
+private static $default_sort '$END$';
 ```
 ### hm (has many)
 ```PHP
