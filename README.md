@@ -16,7 +16,9 @@ Direct links to specific template files:
 * [`SilverStripe PHP Skeletons.xml`](https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Skeletons.xml)
 * [`SilverStripe PHP Static Variables.xml`](https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Static%20Variables.xml)
 
-Or you can `cd` into your `templates/` directory and `git clone https://github.com/janneklouman/silverstripe-php-web-storm-live-templates.git .`
+Or you can `cd` to `templates/` directory and run 
+
+`git clone https://github.com/janneklouman/silverstripe-php-web-storm-live-templates.git .`
 
 # Usage
 When editing a PHP file you can simply type in the short code for the live template and then hit the "Choose lookup Item Replace" keymap binding (`tab` by default). For example, typing in `aa` then hitting `tab`, would expand `aa` into the following and leaving your cursor in between the single quotes:
