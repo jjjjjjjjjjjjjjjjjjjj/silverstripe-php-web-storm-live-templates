@@ -10,11 +10,13 @@ Download and place the template files inside your IDE's `templates/` folder. Whe
 |Linux|`~\.<product name><version number>\config\templates`|
 |OS X|`~/Library/Preferences/<product name><version number>/templates`|
 
-Direct links to the template files: 
+Direct links to specific template files: 
 * [`SilverStripe PHP Fields.xml`](https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Fields.xml)
 * [`SilverStripe PHP Functions.xml`](https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Functions.xml)
 * [`SilverStripe PHP Skeletons.xml`](https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Skeletons.xml)
 * [`SilverStripe PHP Static Variables.xml`](https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Static%20Variables.xml)
+
+Or you can `cd` into your `templates/` directory and `git clone https://github.com/janneklouman/silverstripe-php-web-storm-live-templates.git .`
 
 # Usage
 When editing a PHP file you can simply type in the short code for the live template and then hit the "Choose lookup Item Replace" keymap binding (`tab` by default). For example, typing in `aa` then hitting `tab`, would expand `aa` into the following and leaving your cursor in between the single quotes:
