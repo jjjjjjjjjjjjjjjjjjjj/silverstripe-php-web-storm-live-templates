@@ -57,7 +57,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="ds" value="/**&#10; * @var string&#10; */&#10;private static $default_sort '$END$';" description="Default sort" toReformat="false" toShortenFQNames="true">
+  <template name="ds" value="/**&#10; * @var string&#10; */&#10;private static $default_sort = '$END$';" description="Default sort" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
