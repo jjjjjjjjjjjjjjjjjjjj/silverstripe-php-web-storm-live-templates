@@ -1,5 +1,5 @@
 # SilverStripe live templates
-My collection of live templates for WebStorm and PhpStorm, following PSR-2, using PHPDoc, and utilizing PHP 5.4 array shorthand syntax. These templates do not attempt cover every field, variable, nor function, but are a collection of snippets that I frequently use in my daily work. Feel free to [open issues](https://github.com/janneklouman/silverstripe-phpstorm-live-templates/issues) to suggest additional templates.
+My collection of live templates for WebStorm and PhpStorm, following PSR-2, using PHPDoc, and utilizing PHP 5.4 array shorthand syntax. These templates do not attempt cover every field, variable, nor function, but are a collection of snippets that I frequently use in my daily work. Feel free to [open issues](https://github.com/jjjjjjjjjjjjjjjjjjjj/silverstripe-phpstorm-live-templates/issues) to suggest additional templates.
 
 # Installation
 Download and place the template files inside your IDE's `templates/` folder. Where the folder is located depends on the version and type of IDE you are using. Consult [this IntelliJ article](https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs) on where you'll find yours if below table does not work. Restart your IDE after placing the files in the templates folder.
@@ -11,14 +11,14 @@ Download and place the template files inside your IDE's `templates/` folder. Whe
 |OS X|`~/Library/Preferences/<product name><version number>/templates`|
 
 Direct links to specific template files: 
-* [`SilverStripe PHP Fields.xml`](https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Fields.xml)
-* [`SilverStripe PHP Functions.xml`](https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Functions.xml)
-* [`SilverStripe PHP Skeletons.xml`](https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Skeletons.xml)
-* [`SilverStripe PHP Static Variables.xml`](https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Static%20Variables.xml)
+* [`SilverStripe PHP Fields.xml`](https://raw.githubusercontent.com/jjjjjjjjjjjjjjjjjjjj/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Fields.xml)
+* [`SilverStripe PHP Functions.xml`](https://raw.githubusercontent.com/jjjjjjjjjjjjjjjjjjjj/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Functions.xml)
+* [`SilverStripe PHP Skeletons.xml`](https://raw.githubusercontent.com/jjjjjjjjjjjjjjjjjjjj/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Skeletons.xml)
+* [`SilverStripe PHP Static Variables.xml`](https://raw.githubusercontent.com/jjjjjjjjjjjjjjjjjjjj/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Static%20Variables.xml)
 
 Or you can `cd` to `templates/` directory and run:
 
-`git clone https://github.com/janneklouman/silverstripe-php-web-storm-live-templates.git .`
+`git clone https://github.com/jjjjjjjjjjjjjjjjjjjj/silverstripe-php-web-storm-live-templates.git .`
 
 Then optionally remove the unused files by doing something like `rm -rf .git` and `rm README.md` if you don't want them in there.
 
@@ -67,7 +67,7 @@ private static $allowed_actions = [
     - [suf (summary fields)](#suf-summary-fields)
 
 ## Fields
-Direct link to the live template file: https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Fields.xml
+Direct link to the live template file: https://raw.githubusercontent.com/jjjjjjjjjjjjjjjjjjjj/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Fields.xml
 ### cbf (check box field)
 ```PHP
 CheckboxField::create('$NAME$', $LABEL$)$END$
@@ -115,7 +115,7 @@ NumericField::create('$NAME$', $LABEL$)$END$
 TextField::create('$NAME$', $LABEL$)$END$
 ```
 ## Functions
-Direct link to the live template file: https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Functions.xml
+Direct link to the live template file: https://raw.githubusercontent.com/jjjjjjjjjjjjjjjjjjjj/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Functions.xml
 ### gcms (get cms fields)
 ```PHP
 /**
@@ -150,7 +150,7 @@ public function updateCMSFields(FieldList $fields)
 }
 ```
 ## "Skeletons"
-Direct link to the live template file: https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Skeletons.xml
+Direct link to the live template file: https://raw.githubusercontent.com/jjjjjjjjjjjjjjjjjjjj/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Skeletons.xml
 ### dofs (data object file start)
 ```PHP
 /**
@@ -212,7 +212,7 @@ class $CLASS$_Controller extends Page_Controller
 }
 ```
 ## Static variables
-Direct link to the live template file: https://raw.githubusercontent.com/janneklouman/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Static%20Variables.xml
+Direct link to the live template file: https://raw.githubusercontent.com/jjjjjjjjjjjjjjjjjjjj/silverstripe-phpstorm-live-templates/master/SilverStripe%20PHP%20Static%20Variables.xml
 ### aa (allowed actions)
 ```PHP
 /**
